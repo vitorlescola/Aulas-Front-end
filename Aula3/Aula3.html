@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="Aula3.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Bem Vindos a minha pagina!!!</h1>
+        <h1>portifólio pessoas</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main id="main">
+        <section id="sobre">
+            <h4>Sobre Mim</h4>
+            <p>Eu sou um aluno de engenharia de software, atualmente estudando web development, espesificamente <b>HTML</b>, <b>CSS</b> e <b>javascript</b>, pretendendo estudar react, SQL e PHP em seguida</p>
+        </section>
+
+        <section id="projetos">
+            <article>
+               <h5>Projetos realizados</h5>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam neque facilis saepe culpa omnis dignissimos consectetur. Architecto, neque! Eveniet natus enim labore perspiciatis suscipit itaque nisi delectus expedita corrupti!</p>
+            </article>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="">
+                <fieldset>
+                    <legend>&#128512;Envie uma Mensagem</legend>
+
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" placeholder="Nome" name="nomeS" autocomplete="off"> <br><br>
+
+                    <label for="">Genero</label>
+                    <input type="radio" name="gen">Masculino
+                    <input type="radio" name="gen">Feminino <br><br>
+
+                    <label for="">Interesses</label>
+                    <input type="checkbox">1
+                    <input type="checkbox">2 <br><br>
+
+                    <label for="">Linguagens</label>
+                    <input list="linguagens" name="linguagem">
+                    <datalist id="linguagens">
+                        <option value="JAVA&#9749;"></option>
+                        <option value="PYTHON&#128013;"></option>
+                        <option value="C&#128000;"></option>
+                        <option value="COBOL&#129430;"></option>
+                        <option value="JAVASCRIPT&#129504;"></option>
+                        <option value="PHP&#128024;"></option>
+                    </datalist> <br><br>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h5>Feito por mim, para aula 3 de front end 3º semestre</h5>
+        <p>&#169;Vitor L.</p>
+    </footer>
+</body>
+</html>
