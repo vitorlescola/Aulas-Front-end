@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    background-color: rgb(238, 229, 217);
+    border-radius:23px;
+    margin: 0;
+    color: black;
+}
+
+.header h2{
+    text-align: left;
+    padding: 10px;
+    
+}
+
+.intro{
+    text-align: center;
+}
+
+#formulario{
+    margin-top: 10px;
+    border: 2px solid white;
+}
+
+textarea{
+    height: 100px;
+    width: 200px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
