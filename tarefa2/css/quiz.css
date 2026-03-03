@@ -38,3 +38,24 @@ body{
 #acerto{
     color: white;
 }
+
+li:hover{
+    background-color: rgb(97, 94, 94);
+}
+
+input:checked{
+    background-color: lime;
+}
+
+li:checked{
+    background-color: lime;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}

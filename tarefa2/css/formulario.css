@@ -21,10 +21,20 @@ body{
 }
 
 #formulario{
+    margin-top: 10px;
     border: 2px solid white;
 }
 
 textarea{
     height: 100px;
     width: 200px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
 }
