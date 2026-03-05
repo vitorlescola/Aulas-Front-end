@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-color: rgb(30, 29, 29);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8cpGHTYYKtZBN0TWenJAHXdPg_VbXCnouw&s");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 5px;
+}
+
+header h1{
+    padding-bottom: 50px;
+}
+
+#topo{
+    background-image: url("http://www.ung.br/sites/ung.br/files/fields/imagemLateral/noticias/2018/02/ciencia-da-computacao.jpg");
+}
+
+nav ul{
+    margin-top: 2px;
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(30, 29, 29);
+    column-gap: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav li{
+    transition: 0.3s;
+}
+
+nav li:hover{
+    background-color: rgb(55, 54, 54);
+    transform: scale(1.1);
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    margin-top: 50px;
+    border: 2px solid lime;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    transition: 0.2s;
+    box-shadow: 2px 2px 30px;
+    transition: 0.3s;
+}
+
+section h2{
+    text-align: center;
+}
+
+section aside{
+    text-align: right;
+    background-color: black;
+    margin-bottom: 0;
+    transition: 0.2s;
+}
+
+section:hover{
+    background-color: rgb(8, 81, 8);
+    transform: scale(1.02);
+}
+
+#pioneiros{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0Akahzn6jlQpZ4w0m2sw9zfAP7Qr1TS-VJ0nfKYppKjWJXu1s_iIeAYVrefu0Te98HP9TfhuAK_5hdBXAStSigbvzqO04Om-5I0Q2Co&s=10");
+}
+
+#pioneiros:hover aside{
+    background-color: rgb(8, 81, 8);
+}
+
+#bugs{
+    background: url("https://static.wixstatic.com/media/02fa5c_5d2c496e04274f9da0fcb8a60aaa4e29~mv2.png/v1/fill/w_568,h_568,al_c,lg_1,q_85,enc_avif,quality_auto/02fa5c_5d2c496e04274f9da0fcb8a60aaa4e29~mv2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    transition: 0.8s;
+}
+
+#bugs:hover{
+    background: url("https://media.tenor.com/6mXCwY_3XmUAAAAj/minecraft-creeper.gif");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    transition: 0.8s;
+}
+
+#bugs pre{
+    color: lime;
+}
+
+#internet{
+    background: url("https://cds.cern.ch/images/CERN-GE-9407011-31/file?size=large");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+#internet:hover{
+    background-color: rgb(8, 81, 8);
+}
+
+table{
+    margin-left: 650px;
+    text-align: center;
+    border: 1px solid lime;
+}
+
+#linha-do-tempo ol{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 5px;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.09);
+}
+
+footer{
+    display: flex;
+}
