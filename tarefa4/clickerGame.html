@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://images.seeklogo.com/logo-png/42/2/dragon-ball-with-4-stars-logo-png_seeklogo-425017.png" type="png">
+    <link rel="stylesheet" href="clickerGame.css">
+    <title>Clicker</title>
+</head>
+<body>
+
+    <div id="mainCon">
+        <div id="main">
+            <h1 id="poder">Poder: 0</h1>
+            <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfvC-bDAi0ci_SKyeHSfOdWeoD4T3JTuVxxw&s" alt="GOKU" onclick="treinar()">
+            <h2 id="h2">Multiplicador: 1x</h2><br><br>
+
+            <h3 id="victory">Você comprou todas as formas!</h3>
+            
+        </div>
+    </div>
+
+    <div id="formasCon">
+        <h3>Formas</h3>
+        <div id="formas">
+            <div class="forma">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/08058935-1be6-4a21-8565-3c718332bfe3/df778et-e658f474-7b95-4dc0-8a5d-28bbb714db25.png/v1/fill/w_754,h_1059/goku_kaioken_1_png_by_12road12_df778et-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc5NyIsInBhdGgiOiIvZi8wODA1ODkzNS0xYmU2LTRhMjEtODU2NS0zYzcxODMzMmJmZTMvZGY3NzhldC1lNjU4ZjQ3NC03Yjk1LTRkYzAtOGE1ZC0yOGJiYjcxNGRiMjUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.QwUsOVtL-GXCV7QV8-E0aFNy-qAEya1iQ6MkqdtTwdg" alt="Kaioken">
+                <h3>20</h3>
+                <h3>Kaioken</h3>
+            </div>
+            <div class="forma">
+                <img src="https://www.transparentpng.com/download/goku/0Hk4Ku-goku-background.png" alt="ssj1">
+                <h3>100</h3>
+                <h3>Super saiyajin 1</h3>
+            </div>
+            <div class="forma">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b88f884e-d134-4606-a5ab-0eb9bcfaaa36/dg3irwx-e5a8c0de-5c31-4721-949d-6b96649ecc14.png/v1/fill/w_501,h_1594/goku_ssj2_fp_png_format_by_gogitoytb_dg3irwx-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU5NCIsInBhdGgiOiIvZi9iODhmODg0ZS1kMTM0LTQ2MDYtYTVhYi0wZWI5YmNmYWFhMzYvZGczaXJ3eC1lNWE4YzBkZS01YzMxLTQ3MjEtOTQ5ZC02Yjk2NjQ5ZWNjMTQucG5nIiwid2lkdGgiOiI8PTUwMSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hjegqwLdl4SklQ1d2fdREzwniaEnoSfA2pTurnBNl_Q" alt="ssj2">
+                <h3>500</h3>
+                <h3>Super saiyajin 2</h3>
+            </div>
+            <div class="forma">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b88f884e-d134-4606-a5ab-0eb9bcfaaa36/dg3ijop-2bb14161-b60e-4e4c-a29a-0c74d9142e5e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9iODhmODg0ZS1kMTM0LTQ2MDYtYTVhYi0wZWI5YmNmYWFhMzYvZGczaWpvcC0yYmIxNDE2MS1iNjBlLTRlNGMtYTI5YS0wYzc0ZDkxNDJlNWUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ylfQGuN8ySz35__4Hr7CSHDw49DBogJxZU1WQkMByLw" alt="ssj3">
+                <h3>1000</h3>
+                <h3>Super saiyajin 3</h3>
+            </div>
+            <div class="forma">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c789a6c-dc0f-4c90-9977-471e89ef548d/dg1bvil-8b076e4e-a003-42c2-90d7-92ec46800035.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83Yzc4OWE2Yy1kYzBmLTRjOTAtOTk3Ny00NzFlODllZjU0OGQvZGcxYnZpbC04YjA3NmU0ZS1hMDAzLTQyYzItOTBkNy05MmVjNDY4MDAwMzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9_ZJy01940gtawgzk2Eje8x7yGq4uCkc-2GNhg9z9Cs" alt="ssj4">
+                <h3>2000</h3>
+                <h3>Super saiyajin 4</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="mais">
+        <img id="vic" src="https://seyiagboola.wordpress.com/wp-content/uploads/2015/07/goku-push-ups-1.gif" alt="">
+    </div>
+
+    <script src="clickerGame.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+
+#mainCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; 
+}
+
+#main{
+    position: relative;
+}
+
+#main img{
+    display: block;
+    height: 375px;
+}
+
+#main h1{
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#formasCon{
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: hsla(180, 62%, 29%, 0.514);
+  padding-top: 20px;
+  text-align: center;
+}
+
+#formas{
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.forma img, .compravel img{
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+
+.forma{
+    background-color: hsla(0, 50%, 48%, 0.603);
+}
+
+.compravel{
+    background-color: hsla(120, 67%, 40%, 0.76);
+}
+
+#victory{
+    display: none;
+}
+
+#mais{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
