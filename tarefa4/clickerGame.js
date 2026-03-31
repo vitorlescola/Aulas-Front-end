@@ -69,3 +69,16 @@ function comprar(){
             valor=999999999999999;
     }
 }
+
+setInterval(() => {
+    auto();
+}, 1000);
+
+function auto(){
+    setTimeout(() => {
+        if(comprados>0){
+            poder+=mult;
+            document.getElementById("poder").textContent=`Poder: ${poder}`;
+        }
+    }, 1000);
+}

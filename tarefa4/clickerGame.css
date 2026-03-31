@@ -66,3 +66,11 @@ body{
     align-items: center;
     justify-content: flex-start;
 }
+
+#img{
+    transition: 0.1s;
+}
+
+#img:active{
+    transform: scale(0.9);
+}
