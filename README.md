@@ -11,3 +11,5 @@ DaisyUI: https://vitorlescola.github.io/Aulas-Front-end/aula4/aula4.html
 Bootstrap: https://vitorlescola.github.io/Aulas-Front-end/aula4/aula4B.html
 
 Clicker: https://vitorlescola.github.io/Aulas-Front-end/tarefa4/clickerGame.html
+
+Resumo: https://vitorlescola.github.io/Aulas-Front-end/aula7/aula7.html
