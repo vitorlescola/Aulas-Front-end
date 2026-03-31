@@ -79,6 +79,10 @@ function auto(){
         if(comprados>0){
             poder+=mult;
             document.getElementById("poder").textContent=`Poder: ${poder}`;
+            if(Number(poder)>=valor&&!fim){
+                //console.log("a");
+                atualizar();
+        }
         }
     }, 1000);
 }
