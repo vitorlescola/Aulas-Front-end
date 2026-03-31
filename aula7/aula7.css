@@ -1,0 +1,20 @@
+.topo{
+    background: #ffc107;
+    text-align: center;
+    font-size: 43px;
+    font-weight: bold;
+    border: 2px solid #000faf;
+}
+
+.painel{
+    background: #aaa;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #000faf;
+}
+
+.total{
+    font-size: 32px;
+    text-align: right;
+    font-weight: bold;
+}
