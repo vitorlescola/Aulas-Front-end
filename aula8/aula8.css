@@ -38,6 +38,36 @@ button{
     margin-top: 10px;
 }
 
+#com{
+    background-color: lime;
+    color: white;
+    border-radius: 10%;
+    border: none;
+    padding: 2%;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px black;
+}
+
+#com:hover{
+    transform: scale(1.15);
+    background-color: rgb(13, 214, 13);
+}
+
+#edi{
+    background-color: blue;
+    color: white;
+    border-radius: 10%;
+    border: none;
+    padding: 2%;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px black;
+}
+
+#edi:hover{
+    transform: scale(1.15);
+    background-color: rgb(27, 27, 219);
+}
+
 #del{
     background-color: red;
     color: white;
@@ -45,7 +75,7 @@ button{
     border: none;
     padding: 2%;
     transition: 0.5s;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 2px 2px 2px black;
 }
 
 #del:hover{
