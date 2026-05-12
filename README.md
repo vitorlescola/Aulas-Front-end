@@ -21,5 +21,7 @@ Prova1 exe4: https://vitorlescola.github.io/Aulas-Front-end/prova1/exe4.html
 -----------------2 SEMESTRE----------------
 
 Aula9 Lista exe1: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e1.html
+
 Aula9 Lista exe2: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e2.html
+
 Aula9 Lista exe3: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e3.html
