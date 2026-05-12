@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #cIn{
+            background-color: aliceblue;
+            
+        }
+    </style>
+
+    <title>Validação de CPF</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Validação de CPF</h1>
+    </div>
+
+    <div class="container" id="cIn">
+        <label for="cpf">CPF: </label>
+        <input type="number" id="cpf" placeholder="cpf">
+        <button class="btn bg-success" id="val" onclick="validar();">Validar</button>
+        <p id="texto"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        function validar(){
+            const cpf=document.getElementById("cpf").value;
+
+                if (cpf.length!==11 || /^(\d)\1+$/.test(cpf)){
+                    document.getElementById("texto").innerHTML=`
+                    <p class="text-danger">Inválido</p>`;
+                }
+
+                function calcularDigito(cpfParcial, pesoInicial) {
+                    let soma = 0;
+
+                    for (let i = 0; i < cpfParcial.length; i++) {
+                    soma += parseInt(cpfParcial[i]) * (pesoInicial - i);
+                    }
+
+                    const resto=soma%11;
+                    return resto < 2 ? 0 : 11 - resto;
+                }
+
+                const primeiroDigito = calcularDigito(cpf.slice(0, 9), 10);
+                const segundoDigito = calcularDigito(cpf.slice(0, 10), 11);
+
+                if(primeiroDigito===parseInt(cpf[9])&&segundoDigito===parseInt(cpf[10])){
+                    document.getElementById("texto").innerHTML=`
+                    <p class="text-success">Válido</p>`;
+                }else{
+                    document.getElementById("texto").innerHTML=`
+                    <p class="text-danger">Inválido</p>`;
+                }
+        }
+    </script>
+</body>
+</html>
