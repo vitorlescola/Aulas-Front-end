@@ -19,9 +19,16 @@ Prova1 exe1-3: https://vitorlescola.github.io/Aulas-Front-end/prova1/exe1.html
 Prova1 exe4: https://vitorlescola.github.io/Aulas-Front-end/prova1/exe4.html
 
 -----------------2 SEMESTRE----------------
+Gerenciador de tarefas: https://vitorlescola.github.io/Aulas-Front-end/aula8/aula8.html
 
 Aula9 Lista exe1: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e1.html
 
 Aula9 Lista exe2: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e2.html
 
 Aula9 Lista exe3: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e3.html
+
+Aula9 Lista exe4: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e4.html
+
+Aula9 Lista exe5: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e5.html
+
+Aula9 Lista exe6: https://vitorlescola.github.io/Aulas-Front-end/aula9Lista/e6.html
