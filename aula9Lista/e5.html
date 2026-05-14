@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infinity Bank Convidados</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .todo-app{
+            text-align: center;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li{
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        li.completed{
+            text-decoration: line-through;
+        }
+
+        button{
+            margin-top: 10px;
+        }
+
+        #com{
+            background-color: lime;
+            color: white;
+            border-radius: 10%;
+            border: none;
+            padding: 2%;
+            transition: 0.5s;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        #com:hover{
+            transform: scale(1.15);
+            background-color: rgb(13, 214, 13);
+        }
+
+        #edi{
+            background-color: blue;
+            color: white;
+            border-radius: 10%;
+            border: none;
+            padding: 2%;
+            transition: 0.5s;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        #edi:hover{
+            transform: scale(1.15);
+            background-color: rgb(27, 27, 219);
+        }
+
+        #del{
+            background-color: red;
+            color: white;
+            border-radius: 10%;
+            border: none;
+            padding: 2%;
+            transition: 0.5s;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        #del:hover{
+            transform: scale(1.15);
+            background-color: rgb(213, 41, 41);
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-app">
+        <h2>Lista de convidados</h2>
+        <input type="text" id="taskInput" placeholder="Adicionar novo convidado">
+        <button onclick="addTask();">Adicionar</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script>
+        let count=1;
+
+        function addTask(){
+            const nova=document.getElementById("taskInput").value.trim();
+
+            if(nova!=''){
+                document.getElementById("taskList").insertAdjacentHTML('beforeend',`<li id="${count}">${count}: ${nova}
+                    <button id="com" onclick="completeTask(${count})">Concluir</button>
+                    <button id="edi" onclick="editTask(${count})">Editar</button>
+                    <button id="del" onclick="deleteTask(${count})">Excluir</button></li>`);
+
+                count++;
+
+                document.getElementById("taskInput").value="";
+            }else{
+                alert("Não pode estar vazia");
+            }
+        }
+
+        function completeTask(id){
+            document.getElementById(id).style.background="lime";
+        }
+
+        function editTask(id){
+            const ta=document.getElementById(id);
+            const textoAtual=ta.firstChild.textContent.split(": ")[1].trim();
+
+            ta.innerHTML=`<input id="no${id}" value="${textoAtual}"><button onclick="changeTask(${id})">Editar</button>`;
+        }
+
+        function changeTask(id){
+            const novoTexto=document.getElementById(`no${id}`).value.trim();
+
+            if(novoTexto!==''){
+                const ta=document.getElementById(id);
+
+                ta.innerHTML=`${id}: ${novoTexto}<button id="com" onclick="completeTask(${id})">Feita</button>
+                    <button id="edi" onclick="editTask(${id})">Editar</button>
+                    <button id="del" onclick="deleteTask(${id})">X</button>`;
+            }else{
+                alert("Não pode estar vazia");
+            }
+        }
+
+        function deleteTask(id){
+            document.getElementById(id).remove();
+        }
+    </script>
+</body>
+</html>
